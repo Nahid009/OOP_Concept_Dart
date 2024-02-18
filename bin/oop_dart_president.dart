@@ -1,10 +1,12 @@
 import 'Class&Object/Animal.dart';
 import 'Class&Object/SimpleInterest.dart';
 import 'Constructor/CarAgain.dart';
+import 'Constructor/Chair..dart';
 import 'Constructor/Employee.dart';
 import 'Constructor/Person..dart';
 import 'Constructor/Staff.dart';
 import 'Constructor/Student.dart';
+import 'Constructor/Table.dart';
 import 'Constructor/Teacher.dart';
 import 'Object/Bicycle.dart';
 import 'Object/Car.dart';
@@ -85,5 +87,15 @@ void main() {
 
   Employee employeeObject = new Employee("Ayan", 5);
   employeeObject.displayResult();
+
+  //Constructor class Chair
+
+  Chair chairObject = Chair(name: "Chair1", color: "Red");
+  chairObject.displayResult();
+
+  //Constructor class Table
+
+  Table tableObject = new Table();
+  tableObject.displayResult();
 
 }
