@@ -11,6 +11,8 @@ import 'Constructor/Teacher.dart';
 import 'Default Constructor/Laptop.dart';
 import 'Default Constructor/PersonAgain.dart';
 import 'Default Constructor/StudentAgain.dart';
+import 'Named Constructor/AnimalAgain.dart';
+import 'Named Constructor/Mobile.dart';
 import 'Named Constructor/StudentFive.dart';
 import 'Object/Bicycle.dart';
 import 'Object/Car.dart';
@@ -151,4 +153,24 @@ void main() {
   print("Name : ${studentFiveObject.name}");
   print("Age : ${studentFiveObject.age}");
   print("Roll NUmber : ${studentFiveObject.rollNumber}");
+
+  // Named Constructor In Dart
+  // Class Mobile
+
+  var mobile1 = Mobile("Samsung", "Black", 20000);
+  mobile1.displayMobileDetails();
+  var mobile2 = Mobile.mobileNamedConstructor("Apple", "White");
+  mobile2.displayMobileDetails();
+
+  // Named Constructor In Dart
+  // Class AnimalAgain
+
+  AnimalAgain animalAgainObject = new AnimalAgain.animalAgainNamedConstructor("Nahid", 28);
+  print("Name Is : ${animalAgainObject.name}");
+  print("Age : ${animalAgainObject.age}");
+
+  AnimalAgain animalAgainTwoObject = new AnimalAgain.animalAgainNamedConstructorTwo("CAT");
+  print("Name : ${animalAgainTwoObject.name}");
+
+
 }
