@@ -11,6 +11,7 @@ import 'Constructor/Teacher.dart';
 import 'Default Constructor/Laptop.dart';
 import 'Default Constructor/PersonAgain.dart';
 import 'Default Constructor/StudentAgain.dart';
+import 'Named Constructor/StudentFive.dart';
 import 'Object/Bicycle.dart';
 import 'Object/Car.dart';
 import 'Parameterized Constructor/StudendThree.dart';
@@ -142,4 +143,12 @@ void main() {
   StudentFour studentFourObject = new StudentFour();
   print("Name : ${studentFourObject.name}");
   print("Age : ${studentFourObject.age}");
+
+  // Named Constructor In Dart
+  // Class StudentFIve
+
+  StudentFive studentFiveObject = new StudentFive.namedConstructor("Jhone", 20, 1);
+  print("Name : ${studentFiveObject.name}");
+  print("Age : ${studentFiveObject.age}");
+  print("Roll NUmber : ${studentFiveObject.rollNumber}");
 }
