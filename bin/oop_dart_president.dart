@@ -11,6 +11,7 @@ import 'Constructor/Teacher.dart';
 import 'Default Constructor/Laptop.dart';
 import 'Default Constructor/PersonAgain.dart';
 import 'Default Constructor/StudentAgain.dart';
+import 'ENCAPSULATION IN DART/EmployeeAgain.dart';
 import 'Named Constructor/AnimalAgain.dart';
 import 'Named Constructor/Mobile.dart';
 import 'Named Constructor/StudentFive.dart';
@@ -149,7 +150,8 @@ void main() {
   // Named Constructor In Dart
   // Class StudentFIve
 
-  StudentFive studentFiveObject = new StudentFive.namedConstructor("Jhone", 20, 1);
+  StudentFive studentFiveObject =
+      new StudentFive.namedConstructor("Jhone", 20, 1);
   print("Name : ${studentFiveObject.name}");
   print("Age : ${studentFiveObject.age}");
   print("Roll NUmber : ${studentFiveObject.rollNumber}");
@@ -165,12 +167,28 @@ void main() {
   // Named Constructor In Dart
   // Class AnimalAgain
 
-  AnimalAgain animalAgainObject = new AnimalAgain.animalAgainNamedConstructor("Nahid", 28);
+  AnimalAgain animalAgainObject =
+      new AnimalAgain.animalAgainNamedConstructor("Nahid", 28);
   print("Name Is : ${animalAgainObject.name}");
   print("Age : ${animalAgainObject.age}");
 
-  AnimalAgain animalAgainTwoObject = new AnimalAgain.animalAgainNamedConstructorTwo("CAT");
+  AnimalAgain animalAgainTwoObject =
+      new AnimalAgain.animalAgainNamedConstructorTwo("CAT");
   print("Name : ${animalAgainTwoObject.name}");
 
+  // Encapsulation In Dart
+  // class EmployeeAgain
+  // Create an object of Employee class
 
+  EmployeeAgain employeeAgainObject = new EmployeeAgain();
+
+  // setting values to the object using setter
+
+  employeeAgainObject.setId(1);
+  employeeAgainObject.setName("Nahid");
+
+  // Retrieve the values of the object using getter
+
+  print("Id: ${employeeAgainObject.getId()}");
+  print("Name: ${employeeAgainObject.getName()}");
 }
